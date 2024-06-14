@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch Application</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-91eYLuZ2KjkL9JjCkKu0j+Q4Tm6RCtvEEiW+C8Z6MbLmv4ZQGnOo0w7CE1XxAnlWMEq95FLNqVVJZ3r5cJ8m1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Stopwatch</h1>
+      <div class="stopwatch">
+        
+        <div class="display">
+          <span id="minutes">00</span>:<span id="seconds">00</span>:<span
+            id="milliseconds"
+            >000</span
+          >
+        </div>
+        <div class="controls">
+          <button id="startStop" onclick="startStop()">Start</button>
+          <button id="lapReset" onclick="lapReset()">Lap</button>
+          <button
+            id="pauseResume"
+            onclick="pauseResume()"
+            style="display: none"
+          >
+            Pause
+          </button>
+        </div>
+        <ul id="laps"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
